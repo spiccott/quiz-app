@@ -1,0 +1,58 @@
+
+body {
+	font-family: 'Boogaloo', cursive;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+	font-size: 36px;
+	padding: 1em;
+}
+
+header {
+	/*width: 100%;*/
+	text-align: center;
+
+}
+
+/*div {
+	border:solid 1px red;
+}*/
+
+.quiz {
+	max-width: 600px;
+	margin: auto;
+	padding: 1em;
+	/*height: 490px;*/
+}
+
+.prompt h2 {
+	text-align: center;
+	font-size: 1.6em;
+	font-family: 'Boogaloo', cursive;
+}
+
+.progress-footer {
+	background-color: #dddddd;
+	height: 7em;
+	width: 100%;
+	position: absolute;
+  	display: inline-block;
+  	bottom: 0px;
+}
+
+.progress-bar {
+	display: block;
+	margin-top: 2em;
+	text-align: center;
+}
+
+.progress-bar li {
+	display: inline-block;
+	border: solid 1px #ffffff;
+	padding: 1em;
+ 	border-radius: 2em;
+}
