@@ -1,5 +1,7 @@
 
 body {
+	background-image: url("../img/bg.jpg");
+	background-size: cover;
 	font-family: 'Boogaloo', cursive;
 }
 
@@ -14,8 +16,9 @@ h1 {
 
 header {
 	/*width: 100%;*/
+	background-color: #ffffff;
 	text-align: center;
-
+	border-bottom: 1px solid #cccccc;
 }
 
 /*div {
@@ -29,15 +32,24 @@ header {
 	/*height: 490px;*/
 }
 
+.instructions {
+	margin-bottom: 2em;
+	display: none;
+}
+
+.question-header {
+	margin-bottom: 2em;
+}
+
 .prompt h2 {
 	text-align: center;
-	font-size: 1.6em;
+	font-size: 1.8em;
 	font-family: 'Boogaloo', cursive;
 }
 
 .progress-footer {
-	background-color: #dddddd;
-	height: 7em;
+	background-color: #ffffff;
+	border-top: 1px solid #cccccc;
 	width: 100%;
 	position: absolute;
   	display: inline-block;
@@ -46,13 +58,41 @@ header {
 
 .progress-bar {
 	display: block;
-	margin-top: 2em;
+	margin: 2em 0;
 	text-align: center;
 }
 
 .progress-bar li {
 	display: inline-block;
-	border: solid 1px #ffffff;
+	border: solid 1px #999999;
 	padding: 1em;
  	border-radius: 2em;
+ 	font-family: 'Ubuntu', sans-serif;
+}
+
+.active {
+	color: #ffffff;
+	background-color: #888888;
+}
+
+.questions ,
+.answers {
+	font-size: 1.4em;
+	margin-bottom: 2em;
+}
+
+/*#userGuess {
+	display: block;
+	top: 2px;
+}*/
+
+form {
+	line-height: 32px;
+	text-align: center;
+}
+
+#submit-button {
+	font-size: 18px;
+	background-color: #ffffff;
+	padding: 0.4em 1em;
 }
