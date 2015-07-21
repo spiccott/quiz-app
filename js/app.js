@@ -15,7 +15,7 @@ $(document).ready(function() {
 		e.preventDefault();
 		if ( $("input[name='userGuess1']:checked").length) {
 			var guess = parseInt($("input[name='userGuess1']:checked").val());
-			var answer = 2;
+			var answer = 4;
 			console.log("Your guess is: " + guess);
 			if ( guess == answer ) {
 				score++;
@@ -26,6 +26,7 @@ $(document).ready(function() {
 			$("#question-two").show();
 			$(".progress-bar li:nth-child(2)").toggleClass("active").toggleClass("complete");
 			$(".progress-bar li:nth-child(3)").toggleClass("active");
+			$("[name=userGuess1]").removeAttr("checked");
 		}
 	});
 
@@ -33,7 +34,7 @@ $(document).ready(function() {
 		e.preventDefault();
 		if ( $("input[name='userGuess2']:checked").length) {
 			var guess = parseInt($("input[name='userGuess2']:checked").val());
-			var answer = 4;
+			var answer = 3;
 			console.log("Your guess is: " + guess);
 			if ( guess == answer ) {
 				score++;
@@ -44,6 +45,7 @@ $(document).ready(function() {
 			$("#question-three").show();
 			$(".progress-bar li:nth-child(3)").toggleClass("active").toggleClass("complete");
 			$(".progress-bar li:nth-child(4)").toggleClass("active");
+			$("[name=userGuess2]").removeAttr("checked");
 		}
 	});
 
@@ -51,7 +53,7 @@ $(document).ready(function() {
 		e.preventDefault();
 		if ( $("input[name='userGuess3']:checked").length) {
 			var guess = parseInt($("input[name='userGuess3']:checked").val());
-			var answer = 4;
+			var answer = 1;
 			console.log("Your guess is: " + guess);
 			if ( guess == answer ) {
 				score++;
@@ -62,6 +64,7 @@ $(document).ready(function() {
 			$("#question-four").show();
 			$(".progress-bar li:nth-child(4)").toggleClass("active").toggleClass("complete");
 			$(".progress-bar li:nth-child(5)").toggleClass("active");
+			$("[name=userGuess3]").removeAttr("checked");
 		}
 	});
 
@@ -69,7 +72,7 @@ $(document).ready(function() {
 		e.preventDefault();
 		if ( $("input[name='userGuess4']:checked").length) {
 			var guess = parseInt($("input[name='userGuess4']:checked").val());
-			var answer = 4;
+			var answer = 1;
 			console.log("Your guess is: " + guess);
 			if ( guess == answer ) {
 				score++;
@@ -80,6 +83,7 @@ $(document).ready(function() {
 			$("#question-five").show();
 			$(".progress-bar li:nth-child(5)").toggleClass("active").toggleClass("complete");
 			$(".progress-bar li:nth-child(6)").toggleClass("active");
+			$("[name=userGuess4]").removeAttr("checked");
 		}
 	});
 
@@ -87,7 +91,7 @@ $(document).ready(function() {
 		e.preventDefault();
 		if ( $("input[name='userGuess5']:checked").length) {
 			var guess = parseInt($("input[name='userGuess5']:checked").val());
-			var answer = 4;
+			var answer = 3;
 			console.log("Your guess is: " + guess);
 			if ( guess == answer ) {
 				score++;
@@ -98,6 +102,7 @@ $(document).ready(function() {
 			$("#question-six").show();
 			$(".progress-bar li:nth-child(6)").toggleClass("active").toggleClass("complete");
 			$(".progress-bar li:nth-child(7)").toggleClass("active");
+			$("[name=userGuess5]").removeAttr("checked");
 		}
 	});
 
@@ -105,7 +110,7 @@ $(document).ready(function() {
 		e.preventDefault();
 		if ( $("input[name='userGuess6']:checked").length) {
 			var guess = parseInt($("input[name='userGuess6']:checked").val());
-			var answer = 4;
+			var answer = 2;
 			console.log("Your guess is: " + guess);
 			if ( guess == answer ) {
 				score++;
@@ -117,9 +122,20 @@ $(document).ready(function() {
 			$(".prompt>h2").text("You've got " + score + " out of 6 questions right!");
 			$(".progress-bar li:nth-child(7)").toggleClass("active").toggleClass("complete");
 			$(".progress-bar li:nth-child(8)").toggleClass("active");
+			$("[name=userGuess6]").removeAttr("checked");
 		}
 	});
 
-	$("#restart-button").click()
-
+	$("#restart-button").click(function(){
+		score = 0
+		$("#results").hide();
+		$("#question-one").show();
+		$(".progress-bar li:nth-child(8)").toggleClass("active");
+		$(".progress-bar li:nth-child(7)").toggleClass("complete");
+		$(".progress-bar li:nth-child(6)").toggleClass("complete");
+		$(".progress-bar li:nth-child(5)").toggleClass("complete");
+		$(".progress-bar li:nth-child(4)").toggleClass("complete");
+		$(".progress-bar li:nth-child(3)").toggleClass("complete");
+		$(".progress-bar li:nth-child(2)").toggleClass("active").toggleClass("complete");
+	});
 });
