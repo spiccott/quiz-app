@@ -29,15 +29,17 @@ header {
 	max-width: 600px;
 	margin: auto;
 	padding: 1em;
-	/*height: 490px;*/
 }
 
 .instructions {
 	margin-bottom: 2em;
-	/*display: none;*/
 }
 
-.questions {
+.questions, .results {
+	display: none;
+}
+
+#question-one, #question-two, #question-three, #question-four, #question-five, #question-six {
 	display: none;
 }
 
@@ -116,5 +118,9 @@ form span {
 	padding: 0.4em 1em;
 	margin-top: 2.6em;
 	border: solid 1px #333333;
+}
+
+.hidden {
+	display: none;
 }
 
