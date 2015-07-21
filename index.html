@@ -22,32 +22,39 @@
 	</header>
 	<section class="quiz">
 		<div class="instructions">
-			<div class="prompt"><h2>Welcome to Music Theory Quiz App. The following six questions will grade you on your general knowledge.</h2>
+			<div class="prompt">
+				<h2>Welcome to Music Theory Quiz App. The following six questions will grade you on your general knowledge.</h2>
+				<button class="button" id="start-button">Start</button>
 			</div>
 		</div>
-		<div class="question-header">
-			<div class="prompt"><h2>Question 1</h2></div>
-		</div>
 		<div class="questions">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut magni sequi, minima placeat illo qui. Voluptate labore dicta optio, ratione perspiciatis obcaecati eligendi adipisci, quod illo? Cumque repudiandae autem saepe!
+			<div id="question-one">
+				<div class="question-header">
+					<div>
+						<h2>Question 1</h2>
+					</div>
+				</div>
+			<p>In a standard diatonic scale, the first note of the scale is considered the "tonic". Which position is the mediant?</p>
+			<div class="answers">
+				<form>
+					<input type="radio" name="userGuess" class="userGuess" value="0"/>
+					<span class="answer">Fourth</span>
+					<br>
+					<input type="radio" name="userGuess" class="userGuess" value="1"/>
+					<span class="answer">Third</span>
+					<br>
+					<input type="radio" name="userGuess" class="userGuess" value="2"/>
+					<span class="answer">Fifth</span>
+					<br>
+					<input type="radio" name="userGuess" class="userGuess" value="3"/>
+					<span class="answer">Second</span>
+					<br>
+					<button class="button">Submit</button>
+				</form>
+			</div>
+			</div>
 		</div>
-		<div class="answers">
-			<form>
-				<input type="radio" name="userGuess" class="userGuess" value="0">Option 1</input>
-				<span class="answer"></span>
-				<br>
-				<input type="radio" name="userGuess" class="userGuess" value="1">Option 2</input>
-				<span class="answer"></span>
-				<br>
-				<input type="radio" name="userGuess" class="userGuess" value="2">Option 3</input>
-				<span class="answer"></span>
-				<br>
-				<input type="radio" name="userGuess" class="userGuess" value="3">Option 4</input>
-				<span class="answer"></span>
-				<br>
-				<input type="submit" id="submit-button">
-			</form>
-		</div>
+		
 	</section>
 	<footer>
 		<div class="progress-footer">
