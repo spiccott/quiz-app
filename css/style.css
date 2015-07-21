@@ -35,11 +35,11 @@ header {
 	margin-bottom: 2em;
 }
 
-.questions, .results {
+.questions {
 	display: none;
 }
 
-#question-one, #question-two, #question-three, #question-four, #question-five, #question-six {
+#question-one, #question-two, #question-three, #question-four, #question-five, #question-six, #results {
 	display: none;
 }
 
