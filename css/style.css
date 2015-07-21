@@ -64,15 +64,20 @@ header {
 
 .progress-bar li {
 	display: inline-block;
-	border: solid 1px #999999;
+	border: solid 1px #000000;
 	padding: 1em;
  	border-radius: 2em;
  	font-family: 'Ubuntu', sans-serif;
 }
 
+.complete {
+	color: #ffffff;
+	background-color: #bbbbbb;
+}
+
 .active {
 	color: #ffffff;
-	background-color: #888888;
+	background-color: #000000;
 }
 
 .questions ,
@@ -95,4 +100,5 @@ form {
 	font-size: 18px;
 	background-color: #ffffff;
 	padding: 0.4em 1em;
+	margin-top: 2em;
 }
