@@ -39,7 +39,7 @@ header {
 	display: none;
 }
 
-#question-one, #question-two, #question-three, #question-four, #question-five, #question-six, #results {
+#results {
 	display: none;
 }
 
@@ -95,6 +95,7 @@ header {
 .answers {
 	font-size: 24px;
 	margin-bottom: 2em;
+	text-align: center;
 }
 
 /*#userGuess {

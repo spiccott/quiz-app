@@ -13,6 +13,7 @@
 
 	<!-- JavaScript -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/questions.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
 
 </head>
@@ -28,151 +29,26 @@
 			</div>
 		</div>
 		<div class="questions">
-			<div id="question-one">
+			<div id="question">
 				<div class="question-header">
 					<div>
-						<h2>Question 1</h2>
+						<h2></h2>
 					</div>
 				</div>
-				<p>Tempo is the _______ of music.</p>
+				<p></p>
 				<div class="answers">
 					<form>
-						<input type="radio" name="userGuess1" class="userGuess" value="1"/>
-						<span class="answer">Beat</span>
+						<input type="radio" name="userGuess" class="userGuess" value="1"/>
+						<span class="answer" id="answer1"></span>
 						<br>
-						<input type="radio" name="userGuess1" class="userGuess" value="2"/>
-						<span class="answer">Counts</span>
+						<input type="radio" name="userGuess" class="userGuess" value="2"/>
+						<span class="answer" id="answer2"></span>
 						<br>
-						<input type="radio" name="userGuess1" class="userGuess" value="3"/>
-						<span class="answer">Time</span>
+						<input type="radio" name="userGuess" class="userGuess" value="3"/>
+						<span class="answer" id="answer3"></span>
 						<br>
-						<input type="radio" name="userGuess1" class="userGuess" value="4"/>
-						<span class="answer">Speed</span>
-						<br>
-						<button class="button" id="submit-button">Submit</button>
-					</form>
-				</div>
-			</div>
-			<div id="question-two">
-				<div class="question-header">
-					<div>
-						<h2>Question 2</h2>
-					</div>
-				</div>
-				<p>A staff is made up of __ lines and spaces.</p>
-				<div class="answers">
-					<form>
-						<input type="radio" name="userGuess2" class="userGuess" value="1"/>
-						<span class="answer">3</span>
-						<br>
-						<input type="radio" name="userGuess2" class="userGuess" value="2"/>
-						<span class="answer">4</span>
-						<br>
-						<input type="radio" name="userGuess2" class="userGuess" value="3"/>
-						<span class="answer">5</span>
-						<br>
-						<input type="radio" name="userGuess2" class="userGuess" value="4"/>
-						<span class="answer">6</span>
-						<br>
-						<button class="button" id="submit-button">Submit</button>
-					</form>
-				</div>
-			</div>
-			<div id="question-three">
-				<div class="question-header">
-					<div>
-						<h2>Question 3</h2>
-					</div>
-				</div>
-				<p>Which term is used to mean "play loudly"?</p>
-				<div class="answers">
-					<form>
-						<input type="radio" name="userGuess3" class="userGuess" value="1"/>
-						<span class="answer">Forte</span>
-						<br>
-						<input type="radio" name="userGuess3" class="userGuess" value="2"/>
-						<span class="answer">Staccato</span>
-						<br>
-						<input type="radio" name="userGuess3" class="userGuess" value="3"/>
-						<span class="answer">Legatto</span>
-						<br>
-						<input type="radio" name="userGuess3" class="userGuess" value="4"/>
-						<span class="answer">Mozzarella</span>
-						<br>
-						<button class="button" id="submit-button">Submit</button>
-					</form>
-				</div>
-			</div>
-			<div id="question-four">
-				<div class="question-header">
-					<div>
-						<h2>Question 4</h2>
-					</div>
-				</div>
-				<p>What are the lines (in order) on the treble clef?</p>
-				<div class="answers">
-					<form>
-						<input type="radio" name="userGuess4" class="userGuess" value="1"/>
-						<span class="answer">e,g,b,d,f</span>
-						<br>
-						<input type="radio" name="userGuess4" class="userGuess" value="2"/>
-						<span class="answer">g,b,d,f,a</span>
-						<br>
-						<input type="radio" name="userGuess4" class="userGuess" value="3"/>
-						<span class="answer">b,d,f,e,g</span>
-						<br>
-						<input type="radio" name="userGuess4" class="userGuess" value="4"/>
-						<span class="answer">f,a,c,e</span>
-						<br>
-						<button class="button" id="submit-button">Submit</button>
-					</form>
-				</div>
-			</div>
-			<div id="question-five">
-				<div class="question-header">
-					<div>
-						<h2>Question 5</h2>
-					</div>
-				</div>
-				<p>Which of the following is an enharmonic equivalent to B-sharp?</p>
-				<div class="answers">
-					<form>
-						<input type="radio" name="userGuess5" class="userGuess" value="1"/>
-						<span class="answer">A-sharp</span>
-						<br>
-						<input type="radio" name="userGuess5" class="userGuess" value="2"/>
-						<span class="answer">A-flat</span>
-						<br>
-						<input type="radio" name="userGuess5" class="userGuess" value="3"/>
-						<span class="answer">C</span>
-						<br>
-						<input type="radio" name="userGuess5" class="userGuess" value="4"/>
-						<span class="answer">C-flat</span>
-						<br>
-						<button class="button" id="submit-button">Submit</button>
-					</form>
-				</div>
-			</div>
-			<div id="question-six">
-				<div class="question-header">
-					<div>
-						<h2>Question 6</h2>
-					</div>
-				</div>
-				<p>In a standard diatonic scale, the first note of the scale is considered the "tonic". Which position is the mediant?</p>
-				<div class="answers">
-					<form>
-						<input type="radio" name="userGuess6" class="userGuess" value="1"/>
-						<span class="answer">Fourth</span>
-						<br>
-						<input type="radio" name="userGuess6" class="userGuess" value="2"/>
-						<span class="answer">Third</span>
-						<br>
-						<input type="radio" name="userGuess6" class="userGuess" value="3"/>
-						<span class="answer">Fifth</span>
-						<br>
-						<input type="radio" name="userGuess6" class="userGuess" value="4"/>
-						<span class="answer">Second</span>
+						<input type="radio" name="userGuess" class="userGuess" value="4"/>
+						<span class="answer" id="answer4"></span>
 						<br>
 						<button class="button" id="submit-button">Submit</button>
 					</form>
@@ -181,7 +57,7 @@
 		</div>
 		<div id="results">
 			<div class="prompt">
-				<h2>You've got X out of 6 questions right!</h2>
+				<h2></h2>
 				<button class="button" id="restart-button">Try again</button>
 			</div>
 		</div>
